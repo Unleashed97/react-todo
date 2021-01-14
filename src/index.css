@@ -11,3 +11,100 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.todo__title{
+  text-align: center;
+}
+
+.todo__input{
+  width: 100%;
+  min-height: 60px;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.todo__input::placeholder{
+  font-size: 18px;
+}
+
+.todo__list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  margin-top: 20px;
+}
+
+.todo__item{
+  min-height: 60px;
+  padding: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+
+  position: relative;
+
+}
+.first{
+  display: flex;
+  align-items: center;
+}
+.todo__counter{
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.todo__name{
+  margin: 0;
+
+}
+
+.todo__management{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+.todo__edit, .todo__remove{
+  border: 0;
+  background: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+  color: #cccccc;
+  transition: color .2s linear;
+}
+
+.todo__edit{
+
+}
+.todo__edit:hover{
+  color: blue;
+}
+.todo__remove{
+  margin-left: 20px;
+}
+.todo__remove:hover{
+  color: red;
+}
+
+.done{
+  text-decoration: line-through;
+}
