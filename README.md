@@ -1,5 +1,3 @@
-#You can try this app here: https://unleashed97.github.io/react-todo/
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
